@@ -71,15 +71,33 @@ export default{
     h2{
         padding: 0 2rem 1rem 2rem;
         border-bottom: 1px solid lightgray;
+        font-size:1rem;
     }
 
     ul{
         width: 15rem;
-        padding: 2rem 0;
-        margin: 1rem 3rem;
+        padding: 1rem 0;
+        margin: 2rem 3rem;
         background: white;
         border: 2px solid black;
         box-shadow: 0 0 5px black;
+        max-height:50vh;
+        overflow-y: auto;
+    }
+
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 0.3rem;
+    }
+
+    ::-webkit-scrollbar { /*Keeps the scrollbar in the todolist visable*/
+        -webkit-appearance: none;
+        width: 0.3rem;
+    }
+    ::-webkit-scrollbar-thumb { /*Styles the todolist scrollbar*/
+        border-radius: 4px;
+        background-color: rgb(0,0,0);
+        padding-right: 0.7rem;
     }
 
     li{

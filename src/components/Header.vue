@@ -1,5 +1,5 @@
 <template>
-    <h1>SHOP SHOP <br/> til' you <br/> DROP DROP!</h1>
+    <h1>SHOP SHOP <br><span> til' you </span><br/> DROP DROP!</h1>
 </template>
 
 <style>
@@ -9,6 +9,12 @@
         color:white;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
-        padding-top: 2rem;
+        padding: 2rem 0 1rem 0;
+        font-size: 2.5rem;
+        line-height: 1.8rem;
+    }
+
+    span{
+        font-size: 1rem;
     }
 </style>
