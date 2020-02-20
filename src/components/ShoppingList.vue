@@ -79,7 +79,7 @@ export default{
         padding: 1rem 0;
         margin: 2rem 3rem;
         background: white;
-        border: 2px solid black;
+        border: 1px solid black;
         box-shadow: 0 0 5px black;
         max-height:50vh;
         overflow-y: auto;
@@ -137,5 +137,9 @@ export default{
 
     .removeItem{
         font-weight:bold;
+    }
+
+    .removeItem:hover{
+        cursor: pointer;
     }
 </style>
