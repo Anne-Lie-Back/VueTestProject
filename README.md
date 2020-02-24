@@ -10,6 +10,7 @@ I made a shopping list (no local storage though).
 Write this in the terminal FIRST TIME you want to run the project:
 ```
 npm  install
+```
 
 ### Compiles and hot-reloads for development
 
@@ -24,7 +25,8 @@ You need to run npm serve once and copy link everytime you open the project to g
 
 Any problems?
 check: https://cli.vuejs.org/guide/installation.html
-(I'm not sure if you need to install Vue globally ("npm install -g @vue/cli")for "npm install" to work, but probably you don't have to do that. "npm install" should work)
+(I'm not sure if you need to install Vue globally ("npm install -g @vue/cli"
+)for "npm install" to work, but probably you don't have to do that. "npm install" should work)
 
 ----------------------------------------------------------------------------------------------------------
 
