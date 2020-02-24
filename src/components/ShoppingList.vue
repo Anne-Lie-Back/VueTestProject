@@ -20,45 +20,44 @@
 </template>
 
 <script>
-export default{
+    export default{
+        
+        data(){   
+            return {
+                max: 15,
+                newItem: '',
+                idForItem: 4,
 
-    name:'ShoppingList',
-    data(){   
-        return {
-            max: 15,
-            newItem: '',
-
-            idForItem: 4,
                 listItems: [
                 {'name': 'Covfefe',
-                 'id': 1,},
+                    'id': 1,},
                 {'name':'Toilet Paper',
                 'id': 2},
                 {'name': 'Apples',
                 'id': 3},
                 ]       
-        }
-
-    },
-
-    methods:{
-        addItem(){
-            if(this.newItem.trim().length == 0){
-                return
             }
-            this.listItems.push({
-                name: this.newItem, 
-                id: this.idForItem
-                })
-            this.newItem = ''
-            this.idForItem ++
+
         },
 
-        removeListItem(index){
-            this.listItems.splice(index, 1)
+        methods:{
+            addItem(){
+                if(this.newItem.trim().length == 0){
+                    return
+                }
+                this.listItems.push({
+                    name: this.newItem, 
+                    id: this.idForItem
+                    })
+                this.newItem = ''
+                this.idForItem ++
+            },
+
+            removeListItem(index){
+                this.listItems.splice(index, 1)
+            }
         }
     }
-}
 </script>
 
 <style>
